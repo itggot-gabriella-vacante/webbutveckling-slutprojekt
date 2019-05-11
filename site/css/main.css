@@ -1,4 +1,14 @@
 body{
     height: 100vh;
+    margin: 0;
 }
- 
+
+header{
+    height: 70px;
+    width: 100vw;
+    background-color: brown;
+}
+
+.icons{
+    grid-template-columns: repeat(4, 25px);
+}
