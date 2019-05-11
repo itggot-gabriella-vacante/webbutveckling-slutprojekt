@@ -95,8 +95,8 @@ a, a:visited{
 .text{
     height: 60px;
     width: 80vw;
-    background-color:ed;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .btnback{
