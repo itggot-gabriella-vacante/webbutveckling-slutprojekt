@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,43 +27,55 @@
                 <i class="material-icons md-36">subscriptions</i>
             </a>
         </div>
-        <div class="menubuttons">
-            <a href="">
-                <i class="material-icons md-36">person</i>
-            </a>
-        </div>
-    </header>
-    <div class="videocontainer">
-        <div class="thumbnail"></div>
-        <div class="infobox">
-            <div class="profilebox">
-                <div class="profilepic"></div>
-            </div>
-            <div class="videoinfo">
-                <div class="text"></div>
-            </div>
+        <div class="fade-layer" onclick="showMenu()"></div>
+        <div class="menubuttons" onclick="showMenu()">
+            <i class="material-icons md-36">person</i>           
         </div>
     </div>
-    <div class="videocontainer">
-            <div class="thumbnail"></div>
-            <div class="infobox">
-                <div class="profilebox">
-                    <div class="profilepic"></div>
-                </div>
-                <div class="videoinfo">
-                    <div class="text"></div>
-                </div>
-            </div>
+
+    <div class="menu">
+        <div class="clear" onclick="showMenu()"></div>
+        <a href="">
+            <div class="menuitems">Profile</div>
+        </a>
     </div>
-    <div class="videocontainer">
-            <div class="thumbnail"></div>
-            <div class="infobox">
-                <div class="profilebox">
-                    <div class="profilepic"></div>
-                </div>
-                <div class="videoinfo">
-                    <div class="text"></div>
-                </div>
-            </div>
+    
+</header>
+<div class="videocontainer">
+    <div class="thumbnail"></div>
+    <div class="infobox">
+        <div class="profilebox">
+            <div class="profilepic"></div>
+        </div>
+        <div class="videoinfo">
+            <div class="text"></div>
+        </div>
     </div>
+</div>
+
+<div class="videocontainer">
+    <div class="thumbnail"></div>
+    <div class="infobox">
+        <div class="profilebox">
+            <div class="profilepic"></div>
+        </div>
+        <div class="videoinfo">
+            <div class="text"></div>
+        </div>
+    </div>
+</div>
+
+<div class="videocontainer">
+    <div class="thumbnail"></div>
+    <div class="infobox">
+        <div class="profilebox">
+            <div class="profilepic"></div>
+        </div>
+        <div class="videoinfo">
+            <div class="text"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
