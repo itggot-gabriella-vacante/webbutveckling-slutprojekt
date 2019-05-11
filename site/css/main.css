@@ -100,3 +100,9 @@ a, a:visited{
     width: 80vw;
     background-color: red;
 }
+
+.btnback{
+    height: 55px;
+    width: 150px;
+    background-color: plum;
+}
