@@ -6,9 +6,25 @@ body{
 header{
     height: 70px;
     width: 100vw;
-    background-color: brown;
+    background-color: rgb(219, 36, 36);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.menubuttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .icons{
-    grid-template-columns: repeat(4, 25px);
+
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
 }
