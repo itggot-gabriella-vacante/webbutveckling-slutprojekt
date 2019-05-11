@@ -70,7 +70,7 @@ a, a:visited{
 }
 
 .thumbnail{
-    height: 175px;
+    height: 207px;
     width: 100vw;
     background-color: red;
 }
@@ -92,6 +92,7 @@ a, a:visited{
 .profilepic{
     height: 60px;  
     width: 60px;
+    border-radius: 50%;
     background-color: red;
 }
 
