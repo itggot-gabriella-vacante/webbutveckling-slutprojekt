@@ -205,4 +205,8 @@ a, a:visited{
     img{
         display: none;
     }
+
+    .menu{
+        margin-left: 380px;
+    }
   }
