@@ -131,7 +131,7 @@ a, a:visited{
         'menu-desktop videos'
     }
 
-    .show, .menuitems,.menu,.fade-layer.visible,.fade-layer, .videoinfo, .text, .thumbnail, .infobox, .profilepic, img{
+    .show, .menuitems,.menu,.fade-layer.visible,.fade-layer, .videoinfo, .text, .thumbnail, .infobox, .profilepic, .videocontainer, img{
         display: none;
     }
 
