@@ -180,6 +180,10 @@ a, a:visited{
         background-color: rgb(158, 48, 48);
     }
 
+    .thumbnail:hover, .link:hover{
+        opacity: 0.7;
+    }
+
     .infobox{
         height: 40px;
         width: 220px;
