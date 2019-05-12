@@ -193,3 +193,9 @@ a, a:visited{
         background-color: rgb(143, 36, 36);
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    img{
+        display: none;
+    }
+  }
