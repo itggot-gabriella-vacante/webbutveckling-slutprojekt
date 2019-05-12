@@ -6,6 +6,7 @@ body{
     overflow-x: hidden;
 }
 
+/* Header */
 header{
     height: 70px;
     width: 100vw;
@@ -16,14 +17,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 4;
-}
-
-.videocontainer-desktop{
-    display: none;
-}
-
-.menu-desktop{
-    display: none;
 }
 
 .menubuttons{
@@ -37,6 +30,7 @@ a, a:visited{
     color: black;
 }
 
+/* Menu button animation - Mobile, Tablet */
 .show{
     left: 0 !important;
 }
@@ -55,6 +49,7 @@ a, a:visited{
     display: block;
 }
 
+/* Menu Content - Mobile, Tablet */
 .menu{
     height: 300px;
     width: 270px;
@@ -75,12 +70,15 @@ a, a:visited{
     font-size: 25px;
 }
 
+/*Video Replicas*/
+/* Thumbnail */
 .thumbnail{
     height: 207px;
     width: 100vw;
     background-color: red;
 }
 
+/* Video information and profile pictures */
 .infobox{
     height: 70px;
     width: 100vw;
@@ -109,6 +107,7 @@ a, a:visited{
     font-family: 'Rubik', sans-serif;
 }
 
+/* Button back to homepage from profile.html */
 .btnback{
     text-align: center;
     height: 55px;
@@ -116,6 +115,15 @@ a, a:visited{
     background-color: plum;
 }
 
+.videocontainer-desktop{
+    display: none;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+/* Media quary for desktop */
 @media (min-width: 1280px) and (max-width: 1920px){
     
     header{
@@ -135,6 +143,7 @@ a, a:visited{
         display: none;
     }
 
+    /* Menu - Desktop */
     .menu-desktop{
         position: fixed;
         height: 100vh;
@@ -146,6 +155,7 @@ a, a:visited{
         padding-top: 70px;
     }
 
+    /* Menu content - desktop */
     .link{
         height: 30px;
         width: 150px;
@@ -198,6 +208,7 @@ a, a:visited{
         background-color: rgb(143, 36, 36);
     }
 
+    /* Text in text.html */
     .subscriptions{
         height: 100vh;
         width: 100vw;
@@ -205,6 +216,7 @@ a, a:visited{
     }
 }
 
+/* Media query for tablet */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     img{
         display: none;
