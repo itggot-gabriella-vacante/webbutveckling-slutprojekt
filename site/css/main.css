@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 header{
@@ -14,6 +15,15 @@ header{
     grid-template-rows: 70px;
     position: sticky;
     top: 0;
+    z-index: 4;
+}
+
+.videocontainer-desktop{
+    display: none;
+}
+
+.menu-desktop{
+    display: none;
 }
 
 .menubuttons{
@@ -103,4 +113,83 @@ a, a:visited{
     height: 55px;
     width: 150px;
     background-color: plum;
+}
+
+@media (min-width: 1280px) and (max-width: 1920px){
+    
+    header{
+        height: 50px;
+        grid-template-rows: 50px;
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 25vw auto;
+        grid-template-rows: 100%;
+        grid-area: 
+        'menu-desktop videos'
+    }
+
+    .show, .menuitems,.menu,.fade-layer.visible,.fade-layer, .videoinfo, .text, .thumbnail, .infobox, .profilepic, img{
+        display: none;
+    }
+
+    .menu-desktop{
+        position: fixed;
+        height: 100vh;
+        width: 25vw;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    .link{
+        height: 30px;
+        width: 150px;
+        text-align: center;
+    }
+
+    a{
+        cursor: pointer;
+    }
+
+    .videos{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 75vw;
+        padding: 70px;
+        flex-wrap: wrap;
+    }
+
+    .videocontainer-desktop{
+        display: flex;
+        height: 230px;
+        width: 250px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .thumbnail{
+        display: block;
+        height: 180px;
+        width: 220px;
+        background-color: rgb(158, 48, 48);
+    }
+
+    .infobox{
+        height: 40px;
+        width: 220px;
+        display: grid;
+        grid-template-columns: 40px auto;
+        grid-template-rows: 40px;  
+    }
+
+    .profilebox{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(143, 36, 36);
+    }
 }
