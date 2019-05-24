@@ -1,0 +1,228 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Header */
+header{
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(219, 36, 36);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.menubuttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* Menu button animation - Mobile, Tablet */
+.show{
+    left: 0 !important;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+/* Menu Content - Mobile, Tablet */
+.menu{
+    height: 300px;
+    width: 270px;
+    background:  white;
+    position: fixed;
+    top: 0;
+    left: -110vw;
+    transition: left 0.2s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.5);
+    z-index: 1;
+    margin: 200px 50px;
+}
+
+.menuitems{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+}
+
+/*Video Replicas*/
+/* Thumbnail */
+.thumbnail{
+    height: 207px;
+    width: 100vw;
+    background-color: red;
+}
+
+/* Video information and profile pictures */
+.infobox{
+    height: 70px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 70px;
+}
+
+.profilebox, .videoinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profilepic{
+    height: 60px;  
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.text{
+    height: 60px;
+    width: 80vw;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Button back to homepage from profile.html */
+.btnback{
+    text-align: center;
+    height: 55px;
+    width: 150px;
+    background-color: plum;
+}
+
+.videocontainer-desktop{
+    display: none;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+/* Media quary for desktop */
+@media (min-width: 1280px) and (max-width: 1920px){
+    
+    header{
+        height: 50px;
+        grid-template-rows: 50px;
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 25vw auto;
+        grid-template-rows: 100%;
+        grid-area: 
+        'menu-desktop videos'
+    }
+
+    .show, .menuitems,.menu,.fade-layer.visible,.fade-layer, .videoinfo, .text, .thumbnail, .infobox, .profilepic, .videocontainer, img{
+        display: none;
+    }
+
+    /* Menu - Desktop */
+    .menu-desktop{
+        position: fixed;
+        height: 100vh;
+        width: 25vw;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    /* Menu content - desktop */
+    .link{
+        height: 30px;
+        width: 150px;
+        text-align: center;
+    }
+
+    a{
+        cursor: pointer;
+    }
+
+    .videos{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 75vw;
+        padding: 70px;
+        flex-wrap: wrap;
+    }
+
+    .videocontainer-desktop{
+        display: flex;
+        height: 230px;
+        width: 250px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .thumbnail{
+        display: block;
+        height: 180px;
+        width: 220px;
+        background-color: rgb(158, 48, 48);
+    }
+
+    .thumbnail:hover, .link:hover{
+        opacity: 0.7;
+    }
+
+    .infobox{
+        height: 40px;
+        width: 220px;
+        display: grid;
+        grid-template-columns: 40px auto;
+        grid-template-rows: 40px;  
+    }
+
+    .profilebox{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(143, 36, 36);
+    }
+
+    /* Text in text.html */
+    .subscriptions{
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+/* Media query for tablet */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    img{
+        display: none;
+    }
+
+    .menu{
+        margin-left: 380px;
+    }
+  }
